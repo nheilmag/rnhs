@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+       background-image: url(wel.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+        font-family: Arial, sans-serif;
+        color: black;
+        
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: black;
+        color: white;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        color: white;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .text-container {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <a href="events.html">Events</a>
+        </div>
+        <a href="staff.html">Staffs and Faculties</a>
+        <div class="dropdown">
+          <a href="#">Strand</a>
+          <div class="dropdown-content">
+            <a href="abm.html">ABM</a>
+            <a href="humss.html">HUMSS</a>
+            <a href="gas.html">GAS</a>
+            <a href="stem.html">STEM</a>
+            <a href="tvl.html">TVL</a>
+          </div>
+        </div>
+        <a href="index.html">Logout</a>
+      </nav>
+    </header>
+    <div class="text-container">
+      <h1>About RNHS</h1>
+      <p>Rosales National High School (RNHS) is a public secondary educational institution located in Rosales, Pangasinan. The school was established to provide quality and affordable education to its residents.
+
+        The school is currently implementing a K to 12 basic education program offering both junior and senior high school. It is in accordance with the resolution that was ordered by the Department of Education (DepEd). The school has HumSS strand, STEM strand, ABM strand and GAS under the Academic track as well as Technical-Vocational-Livelihood (TVL) track which equips students with technical skills for its senior high school program.
+      </p>
+    </div>
+  </body>
+</html>

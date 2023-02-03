@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+       background-image: url(wel.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+        font-family: Arial, sans-serif;
+        color: black;
+        
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: black;
+        color: white;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        color: white;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .text-container {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <a href="events.html">Events</a>
+        </div>
+        <a href="staff.html">Staffs and Faculties</a>
+        <div class="dropdown">
+          <a href="#">Strand</a>
+          <div class="dropdown-content">
+            <a href="abm.html">ABM</a>
+            <a href="humss.html">HUMSS</a>
+            <a href="gas.html">GAS</a>
+            <a href="stem.html">STEM</a>
+            <a href="tvl.html">TVL</a>
+          </div>
+        </div>
+        <a href="index.html">Logout</a>
+      </nav>
+    </header>
+    <div class="text-container">
+      <h1>ABM</h1>
+      <p>The Accountancy, Business, and Management Strand—or ABM strand—seeks to prepare the young business leaders of tomorrow. ABM strand paves the way for business-related college degrees. It teaches the basic concepts of financial management, accounting, and corporate operations.
+      </p>
+      <img src="abm.jpg"
+    </div>
+  </body>
+</html>

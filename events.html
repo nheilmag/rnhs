@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+       background-image: url(wel.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+        font-family: Arial, sans-serif;
+        color: black;
+        
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: black;
+        color: white;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: black;
+        color: white;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .text-container {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <div class="dropdown">
+          <a href="events.html">Events</a>
+        </div>
+        <a href="staff.html">Staffs and Faculties</a>
+        <div class="dropdown">
+          <a href="#">Strand</a>
+          <div class="dropdown-content">
+            <a href="abm.html">ABM</a>
+            <a href="humss.html">HUMSS</a>
+            <a href="gas.html">GAS</a>
+            <a href="stem.html">STEM</a>
+            <a href="tvl.html">TVL</a>
+          </div>
+        </div>
+        <a href="index.html">Logout</a>
+      </nav>
+    </header>
+    <div class="text-container">
+      <h1>EVENTS</h1>
+      <h3>Buwan ng Wika(National Language Month)</h3>
+      <p>
+        Buwan ng Wika is a month-long event celebrating the Filipino language and culture. Throughout the month, there will be activities like declamations, poetry readings, and musical performances celebrating our national heritage's beauty and virtues.
+      </p>
+      <h3>Nutrition Month</h3>
+      <p>
+        Nutrition Month celebrates the importance of a healthy body and sound mind. Students are taught about proper nutrition and living a healthy lifestyle throughout the month through film showings, special classroom lessons, and cooking and food preparation activities.
+      </p>
+      <h3>Students Council Election</h3>
+      <p>
+        The Student Council Election gives our young students a first-hand glimpse into the democratic process of electing leaders. Two parties comprised of the most outstanding students campaign for the student body's votes through public speeches, debates, and discussion of their platform. Students from grades 7 to 12 vote and elect who will represent and lead them for the rest of the school year.
+      </p>
+      <h3>Teacher's Day</h3>
+      <p>
+        World Teacher Day is a special event where our students show their love and gratitude for their teachers. Students express their appreciation to their beloved second parents by giving them small gifts and performing songs, dance, speeches, and poetry.
+      </p>
+    </div>
+  </body>
+</html>

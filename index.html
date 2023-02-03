@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>LogIn Form</title>
+<link rel="stylesheet" href="style.css">
+
+
+    </head>
+<body>
+<div class="container">
+  <div class="form-container">
+    <form action="homepage.html" id="login-form">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="#" id="switch-form">Sign up</a></p>
+    </form>
+    <form action="homepage.html" id="register-form" style="display: none;">
+      <h2>Sign Up</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="#" id="switch-back">Login</a></p>
+    </form>
+  </div>
+</div>
+<script>
+const switchForm = document.querySelector('#switch-form');
+const loginForm = document.querySelector('#login-form');
+const registerForm = document.querySelector('#register-form');
+
+if (switchForm) {
+  switchForm.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginForm.style.display = 'none';
+    registerForm.style.display = 'flex';
+  });
+}
+
+const switchBack = document.querySelector('#switch-back');
+
+if (switchBack) {
+  switchBack.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginForm.style.display = 'flex';
+    registerForm.style.display = 'none';
+  });
+}
+
+  
+    </script>
+</body>
+</html>
